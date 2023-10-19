@@ -1,0 +1,69 @@
+:root {
+    --light: #FDF4D9;
+    --dark: #07082F;
+    --gray: #7C796E;
+    --graphics: #9B9696;
+    --lighter-dark: #1F203A;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: 'darker_grotesquelight';
+    src: url('public/darkergrotesque-variablefont_wght-webfont.woff') format('woff2'),
+         url('public/darkergrotesque-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main-page {
+    position: relative;
+    background-color: var(--dark);
+}
+
+.title {
+    /* Hey, I’m Mackenzie...*/
+    position: absolute;
+
+    /* Modern */
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 37px;
+    letter-spacing: -0.02em;
+
+    /* Gray */
+    color: var(--graphics);
+}
+
+
+.nav-bar {
+    overflow: hidden;
+    background-color: var(--dark);
+}
+
+.nav-bar a {
+    float: right;
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem * (2/3);
+    color: var(--graphics);
+    line-height: 30px;
+
+    background-color: var(--dark);
+}
+
