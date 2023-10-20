@@ -16,54 +16,92 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    background-color: var(--dark);
 }
 
 .main-page {
     position: relative;
-    background-color: var(--dark);
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 35rem;
+    border: 5px solid black;
+    
+    z-index: -1;
+
+    background-color: var(--lighter-dark);
+}
+
+.title-wrapper {
+    position: relative;
+    padding-top: 12rem;
+    padding-left: 10rem;
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid black;
 }
 
 .title {
-    /* Hey, I’m Mackenzie...*/
-    position: absolute;
+    position: relative;
 
     /* Modern */
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 37px;
+    font-size: 1.15rem;
+    line-height: 50px;
     letter-spacing: -0.02em;
 
     /* Gray */
     color: var(--graphics);
 }
 
+.profile {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 5%;
+    width: 5%;
+    background-color: var(--graphics);
+    border-radius: 50%;
+    opacity: 20%;
+}
 
+/* Nav Bar */
 .nav-bar {
+    position: fixed;
     overflow: hidden;
+    width: 100%;
+    top: 0;
+    padding-right: 4%;
+    border: 5px solid black;
     background-color: var(--dark);
 }
 
 .nav-bar a {
     float: right;
     display: block;
-    padding: 14px 20px;
+    padding: 1.5% 1.2%;
     text-align: center;
     text-decoration: none;
 
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem * (2/3);
-    color: var(--graphics);
+    font-size: 0.75rem;
     line-height: 30px;
+    color: var(--graphics);
 
+    border: 5px solid black;
     background-color: var(--dark);
+}
+
+.navbar a:hover {
+    background-color: var(--graphics);
 }
 
