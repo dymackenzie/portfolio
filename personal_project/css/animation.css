@@ -1,0 +1,71 @@
+/* ROOT VARIABLES */
+:root {
+    --light: #FDF4D9;
+    --dark: #07082F;
+    --gray: #7C796E;
+    --graphics: #9B9696;
+    --lighter-dark: #1F203A;
+    font-size: 1px;
+}
+
+@font-face {
+    font-family: 'darker_grotesquelight';
+    src: url('public/darkergrotesque-variablefont_wght-webfont.woff') format('woff2'),
+        url('public/darkergrotesque-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.animation {
+    position: absolute;
+    top: 45vh;
+    right: 10vw;
+}
+
+.big-circle {
+    position: relative;
+    float: right;
+    width: 400rem;
+    height: 400rem;
+    
+
+    border-radius: 50%;
+    border: 2rem solid var(--light);
+    background-color: var(--dark);
+}
+
+.medium-circle{
+    position: inherit;
+    float: right;
+    width: 80rem;
+    height: 80rem;
+    top: 0rem;
+    right: 0rem;
+
+    border-radius: 50%;
+    border: 2rem solid var(--light);
+    background-color: var(--dark);
+    z-index: 50;
+}
+
+.small-circle{
+    position: inherit;
+    float: right;
+    width: 40rem;
+    height: 40rem;
+    top: 70rem;
+    right: 0rem;
+
+    border-radius: 50%;
+    border: 2rem solid var(--light);
+    background-color: var(--dark);
+    z-index: 51;
+}
+
+.donut-container {
+    position: fixed;
+    overflow: hidden;
+    background-color: transparent;
+    transform: scale(26);
+    color: var(--light);
+}

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="animation.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/title_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/project_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/about_me.css" />
+
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -26,22 +30,80 @@
           <div class="small-circle"></div>
         </div>
       </div>
-
     </div>
 
-    <div class="main-page">
+    <!--<div class="donut-container">
+      <pre class="center" id="donut"></pre>
+    </div>-->
+
+
+    <!-- MAIN PAGE -->
+    <section class="main-page">
 
       <div class="title-wrapper">
         <div class="profile"></div>
         <div class="title">
-          <h1>Hi👋, I'm <strong>Mackenzie.</strong></h1>
+          <h1 id="im-mackenzie">👋 I'm <strong id="my-name">Mackenzie.</strong></h1>
           <h1>I'm a second year student studying <i>Computer Science</i> <br> at <strong>UBC.</strong></h1>
           <p>Currently grinding personal projects.</p>
         </div>
       </div>
 
-    </div>
-    
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+
+      <div class="project-wrapper">
+        <div class="container">
+
+          <input type="radio" name="slide" id="c1" checked>
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="description">
+                <h4>This</h4>
+                <p>A personal, interactive website with HTML, CSS, and JAVASCRIPT</p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c2">
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="description">
+                <h4>2D Physics Engine</h4>
+                <p>Rudimentary physics simulator programmed with JAVA</p>
+              </div>
+            </div>
+          </label>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-me" id="about-me">
+
+      <div id="tiles"></div>
+      <h1 id="about-me-text" class="centered">About Me</h1>
+      <h2 id="click-anywhere" class="centered">(Click anywhere)</h2>
+
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+
+
+    </section>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="js/tiles.js"></script>
+    <script type="module" src="js/scrolling_animation.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,123 @@
+/* ROOT VARIABLES */
+:root {
+    --light: #FDF4D9;
+    --dark: #07082F;
+    --gray: #7C796E;
+    --graphics: #9B9696;
+    --lighter-dark: #1F203A;
+    font-size: 1px;
+}
+
+@font-face {
+    font-family: 'darker_grotesquelight';
+    src: url('public/darkergrotesque-variablefont_wght-webfont.woff') format('woff2'),
+        url('public/darkergrotesque-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    
+    to {
+        background-position: -200% center;
+    }
+}
+
+.about-me {
+    position: relative;
+    animation: background-pan 2s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--dark),
+        var(--lighter-dark),
+        var(--dark)
+    );
+    background-size: 200%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.about-me.toggled {
+    animation: none;
+}
+
+.about-me.toggled > #about-me-text {
+    opacity: 0;
+}
+
+.about-me.toggled > #click-anywhere {
+    opacity: 0;
+}
+
+.about-me.toggled > #video-me {
+    opacity: 1;
+}
+
+.about-me.toggled > #tiles > .tile:hover {
+    opacity: 0.1 !important;
+}
+
+.centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TILES */
+#tiles {
+    height: calc(100vh - 1px);
+    width: calc(100vw - 1px);
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+    cursor: pointer;
+    position: relative;
+}
+
+.tile:hover:before {
+    background-color: var(--lighter-dark);
+}
+
+.tile:before {
+    background-color: var(--dark);
+    content: "";
+    inset: 0.5px;
+    position: absolute;
+}
+
+/* ABOUT ME */
+#about-me-text {
+    color: var(--light);
+    font-weight: 200;
+    font-size: 2vw;
+    margin: 0px;
+    pointer-events: none;
+    transition: opacity 1200ms ease;
+    width: fit-content;
+    z-index: 3;
+}
+
+/* click anywhere */
+#click-anywhere {
+    opacity: 0.5;
+    color: var(--gray);
+    font-size: 20rem;
+
+    margin-top: 2.5%;
+    pointer-events: none;
+    transition: opacity 1200ms ease;
+    width: fit-content;
+    z-index: 3;
+}
+
