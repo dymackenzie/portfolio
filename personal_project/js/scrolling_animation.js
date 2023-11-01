@@ -9,7 +9,7 @@ let toProjects = gsap.timeline({
     scrollTrigger: {
         trigger: '.projects',
         start: 'top bottom',
-        end: '+=40% center',
+        end: 'bottom top',
         scrub: 1,
         markers: false,
         toggleActions: 'play pause reverse reverse'
@@ -17,21 +17,12 @@ let toProjects = gsap.timeline({
 }).to('.animation', { xPercent: -280, yPercent: 270}, 0)
     .to('.animation', { scale: 1.3 }, 0)
     .to('.animation', { rotate: '480deg' }, 0)
-    .from('.project-wrapper', { xPercent: 50 }, 0);
-
-let showcaseProjects = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.project-wrapper',
-        pin: false,
-        start: '+=80% center',
-        end: 'bottom top',
-        scrub: 2,
-        markers: true,
-        toggleActions: 'play pause reverse reverse'
-    }
-}).to('.animation', { xPercent: -10, yPercent: 400 }, 0)
-    .to('.animation', { scale: 1.1 }, 0)
-    .to('.animation', { rotate: '200deg' }, 0);
+    .to('.title-wrapper', { xPercent: -20 }, 0)
+    .to('.design-picture', { yPercent: -100 }, 0)
+    .from('.project-wrapper', { xPercent: 50 }, 0)
+    .to('.animation', { xPercent: -10, yPercent: 400 }, 1)
+    .to('.animation', { scale: 1.1 }, 1)
+    .to('.animation', { rotate: '200deg' }, 1);;
 
 // animate title
 gsap.from('.title', { y: '-100', ease: 'circ', duration: 2 });

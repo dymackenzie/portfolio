@@ -17,6 +17,7 @@
 }
 
 .animation {
+    z-index: 500;
     position: absolute;
     top: 45vh;
     right: 10vw;
