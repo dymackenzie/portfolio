@@ -43,6 +43,11 @@
     min-height: 100vh;
 }
 
+#canvas {
+    position: absolute;
+    height: 100vh;
+}
+
 #title-box {
     position: absolute;
     height: auto;

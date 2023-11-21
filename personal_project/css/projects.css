@@ -37,7 +37,6 @@
     transform: translate(-50%, -33.5%);
     border-radius: 0 0 10px 10px;
     background: var(--yellow);
-    
 }
 
 .project-container {
@@ -67,6 +66,7 @@
     top: 50%;
     border-radius: 20px;
     box-shadow: 0 30px 50px var(--gray);
+    background: var(--base);
 
     user-select: none;
     display: inline-block;

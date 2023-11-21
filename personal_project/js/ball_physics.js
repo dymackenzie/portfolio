@@ -1,4 +1,4 @@
-var NUM_BALLS = 100,
+var NUM_BALLS = 80,
     DAMPING = 0.2,
     GRAVITY = 0.3,
     MOUSE_SIZE = 20,
@@ -207,7 +207,7 @@ var update = function () {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = 'rgba(27,155,244,1)';
+    ctx.fillStyle = 'rgba(18,60,105,1)';
 
     var i = balls.length;
     while (i--) balls[i].draw(ctx);
@@ -218,7 +218,7 @@ var update = function () {
 var add_ball = function (x, y, r) {
 
     var x = x || Math.random() * (canvas.width),
-        y = y || Math.random() * (canvas.height + 500),
+        y = y || Math.random() * (canvas.height - 1000) + 1000,
         r = r || 10 + Math.random() * 20,
         s = true,
         i = balls.length;
@@ -248,7 +248,7 @@ window.onload = function () {
     let viewportWidth = window.innerWidth;
 
     canvas.width = viewportWidth;
-    canvas.height = viewportHeight * (4/5);
+    canvas.height = viewportHeight;
 
     while (NUM_BALLS--) add_ball();
 
