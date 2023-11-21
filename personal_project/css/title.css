@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --darker-base: #EDC7B7;
+    --base: #EEE2DC;
+    --gray: #757072;
+    --blue: #123C69;
+    --ruby: #AC3B61;
+    --yellow: #C0987A;
+    font-size: 1px;
+}
+
+@keyframes wave {
+    0%, 100% {
+      clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+
+    background: linear-gradient(30deg, var(--base), var(--darker-base));
+    background-size: 300% 100%;
+    animation: gradient 2s linear infinite;
+    animation-direction: alternate;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#title-box {
+    position: absolute;
+    height: auto;
+    display: block;
+    text-align: left;
+}
+
+h1 {
+    position: absolute;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12vmin;
+    letter-spacing: 1vmin;
+
+    user-select: none;
+}
+
+.border {
+    color: var(--blue);  
+    text-shadow:
+      -1px -1px 0 var(--ruby), 
+      1px -1px 0 var(--ruby),
+      -1px 1px 0 var(--ruby),
+      1px 1px 0 var(--ruby);  
+}
+  
+.wave {
+    position: relative;
+    color: var(--ruby);
+    animation: wave 4s ease-in-out infinite;
+}
+
+.before-title {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 33rem;
+
+    color: var(--gray);
+
+    margin: -20vh 0 0 0;
+}
+
+.after-title {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 33rem;
+    color: var(--gray);
+}
+
+strong {
+    color: var(--yellow)
+}
+
+.status {
+    position: relative;
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 20rem;
+
+    color: var(--gray);
+}
+
+#profile-picture {
+    position: relative;
+    top: -3vh;
+    left: 17.5vw;
+    height: 25vw;
+    width: 17vw;
+    z-index: 0;
+
+    border-style: solid;
+    border-width: 5rem;
+    border-color: var(--blue);
+
+    background-size: 200%;
+    background-image: url("/handstand_mountain.jpg");
+    background-position: center;
+}

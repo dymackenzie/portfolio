@@ -1,0 +1,33 @@
+/* ROOT VARIABLES */
+:root {
+    --light: #FDF4D9;
+    --dark: #07082F;
+    --gray: #7C796E;
+    --graphics: #9B9696;
+    --lighter-dark: #1F203A;
+    font-size: 1px;
+}
+
+@font-face {
+    font-family: 'darker_grotesquelight';
+    src: url('public/darkergrotesque-variablefont_wght-webfont.woff') format('woff2'),
+        url('public/darkergrotesque-variablefont_wght-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.projects {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    background-color: var(--lighter-dark);
+}
+
+.project-wrapper {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}

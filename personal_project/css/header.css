@@ -1,0 +1,78 @@
+:root {
+    --darker-base: #EDC7B7;
+    --base: #EEE2DC;
+    --gray: #757072;
+    --blue: #123C69;
+    --ruby: #AC3B61;
+    --yellow: #C0987A;
+    font-size: 1px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--base);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20rem 100rem;
+    background: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    user-select: none;
+}
+
+#logo {
+    font-size: 32rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+
+    color: var(--ruby);
+}
+
+#navbar a {
+    position: relative;
+    margin-left: 40rem;
+    user-select: none;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: light;
+    font-size: 17rem;
+    text-decoration: none;
+
+    color: var(--ruby);
+}
+
+#navbar a::before {
+    content: '';
+    position: absolute;
+    margin-top: 3rem;
+    top: 100%;
+    left: 0;
+    width: 0; /* transition before */
+    height: 1.5rem;
+    transition: .3s;
+
+    background-color: var(--ruby);
+}
+
+#navbar a:hover::before {
+    width: 100%; /* transition after */
+}

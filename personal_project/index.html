@@ -1,22 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" type="text/css" href="css/title_page.css" />
-    <link rel="stylesheet" type="text/css" href="css/project_page.css" />
-    <link rel="stylesheet" type="text/css" href="css/animation.css" />
-    <link rel="stylesheet" type="text/css" href="css/about_me.css" />
-
-    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/title.css"/>
+    <link rel="stylesheet" type="text/css" href="css/projects.css"/>
+    <link rel="stylesheet" type="text/css" href="css/about_me.css"/>
+    <title>Portfolio of Mackenzie</title>
   </head>
   <body>
 
     <header class="header">
-      <a hrdf="#" class="logo"></a>
-      
-      <nav class="navbar">
+      <a hrdf="#" id="logo">mackenzie</a>
+      <nav id="navbar">
         <a href="#">Projects</a>
         <a href="#">About Me</a>
         <a href="#">Resume</a>
@@ -24,89 +26,74 @@
       </nav>
     </header>
 
-    <div class="animation">
-      <div class="big-circle">
-        <div class="medium-circle">
-          <div class="small-circle"></div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div class="donut-container">
-      <pre class="center" id="donut"></pre>
-    </div>-->
-
 
     <!-- MAIN PAGE -->
-    <section class="main-page">
-
-      <canvas id="canvas"></canvas>
-      <div class="design-picture"></div>
-      <div class="title-wrapper">
-        <div class="profile"></div>
-        <div class="title">
-          <h1 id="im-mackenzie">👋 I'm <strong id="my-name">Mackenzie.</strong></h1>
-          <h1>I'm a second year student studying <i>Computer Science</i> <br> at <strong>UBC.</strong></h1>
-          <p>Currently grinding personal projects.</p>
+    <section class="main">
+      <div id="title-container">
+        <div id="profile-picture"></div>
+        <div id="title-box">
+          <h2 class="before-title"><strong>Hey! I'm</strong></h2>
+          <h1 class="border">Mackenzie</h1>
+          <h1 class="wave">Mackenzie</h1>
+          <h2 class="after-title">I'm a second year student <br> studying <strong>
+            Computer Science</strong> <br> at <strong>UBC.</strong></h2>
+          <p class="status">Currently grinding personal projects.</p>
         </div>
       </div>
-
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects">
+    <section id="projects-section">
 
-      <div class="project-wrapper">
-        <div class="container">
+      <div id="decor-box1"></div>
+      <div id="decor-box2"></div>
 
-          <input type="radio" name="slide" id="c1" checked>
-          <label for="c1" class="card">
-            <div class="row">
-              <div class="icon">1</div>
-              <div class="description">
-                <h4>This</h4>
-                <p>A personal, interactive website with HTML, CSS, and JAVASCRIPT</p>
-              </div>
+      <h2 id="project-title">Works</h2>
+
+      <div class="project-container">
+        <div id="slide">
+          <div class="item" 
+            onclick="location.href='#';" style="cursor: pointer;">
+            <div class="content">
+              <p class="name">Chess Engine</p>
+              <p class="description">Chess AI with GUI.</p>
             </div>
-          </label>
-
-          <input type="radio" name="slide" id="c2">
-          <label for="c2" class="card">
-            <div class="row">
-              <div class="icon">2</div>
-              <div class="description">
-                <h4>2D Physics Engine</h4>
-                <p>Rudimentary physics simulator programmed with JAVA</p>
-              </div>
+          </div>
+          <div class="item" 
+            onclick="location.href='#';" style="cursor: pointer;">
+            <div class="content">
+              <p class="name">This</p>
+              <p class="description">A full stack website.</p>
             </div>
-          </label>
-
+          </div>
+          <div class="item" 
+            onclick="location.href='#';" style="cursor: pointer;">
+            <div class="content">
+              <p class="name">Graphics Engine</p>
+              <p class="description">Visualizing physics.</p>
+            </div>
+          </div>
         </div>
       </div>
+
     </section>
 
     <!-- ABOUT ME -->
-    <section class="about-me" id="about-me">
-
-      <div id="tiles"></div>
-      <h1 id="about-me-text" class="centered">About Me</h1>
-      <h2 id="click-anywhere" class="centered">(Click anywhere)</h2>
+    <section id="about-me-section">
 
     </section>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <!-- <section id="footer">
 
 
-    </section>
+    </section> -->
 
 
 
     <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-    <script src="js/tiles.js"></script>
-    <script src="js/ball_physics.js"></script>
-    <script type="module" src="js/scrolling_animation.js"></script>
+    
+    <!-- <script type="module" src="js/scrolling_animation.js"></script> -->
 
   </body>
 </html>

@@ -5,7 +5,7 @@ import Lenis from '@studio-freight/lenis';
 gsap.registerPlugin(ScrollTrigger);
 
 // scrolling animation
-let toProjects = gsap.timeline({
+gsap.timeline({
     scrollTrigger: {
         trigger: '.projects',
         start: 'top bottom',
@@ -17,14 +17,15 @@ let toProjects = gsap.timeline({
 }).to('.animation', { xPercent: -280, yPercent: 270}, 0)
     .to('.animation', { scale: 1.3 }, 0)
     .to('.animation', { rotate: '480deg' }, 0)
-    .to('.title-wrapper', { xPercent: -20 }, 0)
-    .to('.design-picture', { yPercent: -100 }, 0)
+    .to('.title-wrapper', { yPercent: 10 }, 0)
+    .to('.design-picture', { yPercent: 20 }, 0)
     .from('.project-wrapper', { xPercent: 50 }, 0)
     .to('.animation', { xPercent: -10, yPercent: 400 }, 1)
     .to('.animation', { scale: 1.1 }, 1)
-    .to('.animation', { rotate: '200deg' }, 1);;
+    .to('.animation', { rotate: '200deg' }, 1);
 
-// animate title
+/******************** Opening Script *******************/
+
 gsap.from('.title', { y: '-100', ease: 'circ', duration: 2 });
 gsap.from('.profile', { y: '-100', ease: 'circ', duration: 2 });
 gsap.to('.title-wrapper', { opacity: 1, duration: 2 });
