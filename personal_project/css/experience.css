@@ -1,0 +1,92 @@
+:root {
+    --darker-base: #EDC7B7;
+    --base: #EEE2DC;
+    --gray: #757072;
+    --blue: #123C69;
+    --ruby: #AC3B61;
+    --yellow: #C0987A;
+    font-size: 1px;
+}
+
+#experience-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience-container h1 {
+    position: relative;
+    font-size: 70rem;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: var(--blue);
+}
+
+.experience-block {
+    position: relative;
+    margin: 0 0 0 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.experience-year {
+    position: absolute;
+    left: -15%;
+    font-size: 30rem;
+
+    font-family: 'PT Sans', sans-serif;
+    color: var(--gray);
+}
+
+.experience-vertical {
+    position: relative;
+    height: 30vh;
+    width: 10px;
+    margin: 5% 0 5% 0;
+
+    background-color: var(--ruby);
+}
+
+.experience-content {
+    gap: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.experience-text {
+    position: relative;
+    padding: 0 0 0 5%;
+    width: 90%;
+    font-size: 20rem;
+    line-height: 40px;
+
+    font-family: 'PT Sans', sans-serif;
+    color: var(--gray);
+}
+
+.experience-author {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 0 0 0 5%;
+}
+
+.experiences-name {
+    font-size: 20rem;
+    font-weight: bold;
+
+    font-family: 'Open Sans', sans-serif;
+    color: var(--blue);
+}
