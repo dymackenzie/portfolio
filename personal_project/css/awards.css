@@ -1,0 +1,124 @@
+:root {
+    --darker-base: #EDC7B7;
+    --base: #EEE2DC;
+    --gray: #757072;
+    --blue: #123C69;
+    --ruby: #AC3B61;
+    --yellow: #C0987A;
+    font-size: 1px;
+}
+
+#awards-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#awards-container h2 {
+    position: relative;
+    font-size: 70rem;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: var(--ruby);
+}
+
+#awards-container h2 span {
+    font-size: 30rem;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: var(--yellow);
+}
+
+.awards-blocks {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    margin: -3% 0 3% 120%;
+}
+
+.awards-block {
+    position: relative;
+
+    border-radius: 2vh;
+    border: 10px solid var(--base);
+
+    display: flex;
+    flex-direction: column;
+    max-width: 35vw;
+    height: auto;
+    margin-top: 5%;
+    padding: 1% 3% 3% 1%;
+    gap: 40px;
+    
+    transition: 0.5s;
+}
+
+.awards-block:hover {
+    transform: translate(0, -10%);
+}
+
+.awards-title {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding-left: 5%;
+    gap: 50px;
+}
+
+.awards-picture {
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 10%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.awards-name {
+
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25rem;
+
+    color: var(--gray);
+}
+
+/* .awards-text {
+    padding: 5%;
+
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    font-size: 20rem;
+
+    color: var(--gray);
+} */
+
+/* .awards-block:nth-child(1) {
+    background-color: var(--blue);
+}
+
+.awards-block:nth-child(2) {
+    background-color: var(--ruby);
+} 
+
+.awards-block:nth-child(3) {
+    background-color: var(--blue);
+} */

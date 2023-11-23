@@ -29,7 +29,7 @@
     position: relative;
     min-height: 100vh;
 
-    background: linear-gradient(30deg, var(--base), var(--darker-base));
+    background: linear-gradient(20deg, var(--base), var(--darker-base), var(--base));
     background-size: 300% 100%;
     animation: gradient 2s linear infinite;
     animation-direction: alternate;
@@ -45,7 +45,9 @@
 
 #canvas {
     position: absolute;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
 }
 
 #title-box {

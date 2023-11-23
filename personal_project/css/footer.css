@@ -1,0 +1,137 @@
+:root {
+    --darker-base: #EDC7B7;
+    --base: #EEE2DC;
+    --gray: #757072;
+    --blue: #123C69;
+    --ruby: #AC3B61;
+    --yellow: #C0987A;
+    font-size: 1px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    bottom: 0;
+
+    background-color: var(--darker-base);
+    padding: 20px 50px;
+
+    font-size: 40rem;
+    font-family: 'Open Sans', sans-serif;
+    
+    filter: blur(0.1px);
+}
+
+footer .social-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .back-to-top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+    transition: 0.5s;
+}
+
+footer .social-icons li, footer .back-to-top li {
+    list-style: none;
+}
+
+footer .social-icons li a {
+    display: inline-block;
+    margin: 0 10px;
+    
+    transition: 0.5s;
+    font-size: 30rem;
+    color: var(--ruby);
+}
+
+footer .back-to-top li a {
+    display: inline-block;
+    margin: 0 10px;
+    
+    text-decoration: none;
+    font-size: 40rem;
+    color: var(--ruby);
+    opacity: 0.5;
+
+    transition: 0.5s;
+}
+
+footer .back-to-top li a:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+footer .social-icons li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .footer-wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('/footer-wave-darker-base.png');
+    background-size: 1000px 100px;
+    filter: blur(2px);
+}
+
+footer .footer-wave#footer-wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .footer-wave#footer-wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .footer-wave#footer-wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .footer-wave#footer-wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}

@@ -96,6 +96,11 @@
     transition: 0.5s;
 }
 
+.item:hover {
+    transform: translate(0, -5%);
+    transform-origin: bottom;
+}
+
 .item:nth-child(1) {
     left: 30%;
 }

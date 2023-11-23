@@ -1,5 +1,11 @@
 import Lenis from '@studio-freight/lenis';
 
+// document.querySelectorAll('*').forEach(el => {
+//     if (el.offsetWidth > document.documentElement.offsetWidth) {
+//         console.log('Found the worst element ever: ', el);
+//     }
+// });
+
 // SMOOTH SCROLLING
 const lenis = new Lenis()
 
