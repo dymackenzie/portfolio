@@ -85,9 +85,9 @@ footer .footer-wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url('/footer-wave-darker-base.png');
+    background: url('/footer-wave-dark-base-2.png');
     background-size: 1000px 100px;
-    filter: blur(2px);
+    filter: blur(0px);
 }
 
 footer .footer-wave#footer-wave1 {
