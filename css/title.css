@@ -63,8 +63,6 @@ h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 12vmin;
     letter-spacing: 1vmin;
-
-    user-select: none;
 }
 
 .border {
@@ -130,4 +128,15 @@ strong {
     background-size: 200%;
     background-image: url("/handstand_mountain.jpg");
     background-position: center;
+
+    transition: .2s ease-in-out;
+    animation: levitate 4s linear infinite;
+}
+
+@keyframes levitate {
+
+    0% {transform: translateY(0);}
+    50% {transform: translateY(3%);}
+    100% {transform: translateY(0);}
+
 }

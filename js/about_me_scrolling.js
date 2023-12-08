@@ -16,7 +16,8 @@ gsap.to(".project-container", {
 })
 
 gsap.from("#about-me-header", {
-    xPercent: -50,
+    xPercent: -20,
+    opacity: 0,
     scrollTrigger: {
         trigger: '#about-me-section',
         start: 'top bottom',
@@ -28,7 +29,8 @@ gsap.from("#about-me-header", {
 })
 
 gsap.from("#about-me", {
-    yPercent: 50,
+    yPercent: 20,
+    opacity: 0,
     scrollTrigger: {
         trigger: '#about-me-section',
         start: 'top bottom',
@@ -40,7 +42,8 @@ gsap.from("#about-me", {
 })
 
 gsap.from("#about-profile-picture", {
-    xPercent: 50,
+    xPercent: 20,
+    opacity: 0,
     scrollTrigger: {
         trigger: '#about-me-section',
         start: 'top bottom',
@@ -64,7 +67,8 @@ gsap.to("#about-profile-picture", {
 })
 
 gsap.from("#about-me-outside h2", {
-    xPercent: 50,
+    xPercent: 20,
+    opacity: 0,
     scrollTrigger: {
         trigger: '#about-me-outside',
         start: 'top bottom',
@@ -76,7 +80,8 @@ gsap.from("#about-me-outside h2", {
 })
 
 gsap.from("#about-me-outside-image", {
-    yPercent: 50,
+    yPercent: 20,
+    opacity: 0,
     scrollTrigger: {
         trigger: '#about-me-outside',
         start: 'top bottom',

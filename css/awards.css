@@ -43,22 +43,26 @@
     width: max-content;
     height: auto;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    overflow: hidden;
     overflow: hidden;
 
-    margin: -3% 0 3% 120%;
+    margin: -1% 0 2% 0%;
+
+    /* Marquee content */
+    flex-shrink: 0;
+    justify-content: space-around;
+    min-width: 65%;
+    gap: var(--gap);
+    animation: scroll 15s linear infinite;
 }
 
 .awards-block {
     position: relative;
 
-    border-radius: 2vh;
-    border: 10px solid var(--base);
-
     display: flex;
     flex-direction: column;
-    max-width: 35vw;
+    max-width: fit-content;
     height: auto;
     margin-top: 5%;
     padding: 1% 3% 3% 1%;
@@ -77,6 +81,7 @@
     flex-direction: row;
     justify-items: center;
     align-items: center;
+    max-width: 30vw;
     padding-left: 5%;
     gap: 50px;
 }
@@ -99,6 +104,23 @@
     font-size: 25rem;
 
     color: var(--gray);
+}
+
+.marquee {
+  --gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
 }
 
 /* .awards-text {

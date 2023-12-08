@@ -17,7 +17,7 @@ gsap.from("#awards-container h2", {
     }
 })
 
-gsap.from(".awards-blocks", {
+gsap.from(".marquee", {
     opacity: 0,
     scrollTrigger: {
         trigger: '#awards-container',

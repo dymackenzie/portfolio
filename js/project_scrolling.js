@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 // scrolling animation
 gsap.from("#decor-box1", {
     yPercent: 100,
+    opacity: 0,
     scrollTrigger: {
         trigger: '.main',
         start: 'bottom bottom',
@@ -18,6 +19,7 @@ gsap.from("#decor-box1", {
 
 gsap.from("#decor-box2", {
     yPercent: 100,
+    opacity: 0,
     scrollTrigger: {
         trigger: '.main',
         start: 'bottom bottom',
@@ -30,6 +32,7 @@ gsap.from("#decor-box2", {
 
 gsap.from("#project-title", {
     xPercent: 50,
+    opacity: 0,
     scrollTrigger: {
         trigger: '.main',
         start: 'bottom bottom',
