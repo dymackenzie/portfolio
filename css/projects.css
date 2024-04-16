@@ -26,7 +26,6 @@
     left: 5%;
     border-radius: 0 0 0 10px;
     background: var(--ruby);
-    
 }
 
 #decor-box2 {
@@ -75,6 +74,7 @@
 #slide {
     width: max-content;
     user-select: none;
+    padding-left: 10%;
 }
 
 .item {
@@ -111,6 +111,14 @@
 
 .item:nth-child(3) {
     left: 40%;
+}
+
+.item:nth-child(4) {
+    left: 45%;
+}
+
+.item:nth-child(5) {
+    left: 50%;
 }
 
 .item .content {

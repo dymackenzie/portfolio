@@ -44,11 +44,11 @@ gsap.from("#project-title", {
 })
 
 gsap.to(".project-container", {
-    xPercent: -78,
+    xPercent: -100,
     scrollTrigger: {
         trigger: '#projects-section',
         start: 'top top',
-        end: '+=100%',
+        end: '+=200%',
         pin: '#projects-section',
         ease: 'circ',
         scrub: true,
