@@ -102,6 +102,7 @@
 }
 
 .item:nth-child(1) {
+    background-image: url('/typing_game.png');
     left: 30%;
 }
 
