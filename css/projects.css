@@ -106,18 +106,22 @@
 }
 
 .item:nth-child(2) {
+    background-image: url('/immigr8.png');
     left: 35%;
 }
 
 .item:nth-child(3) {
+    background-image: url('/chess_bot.png');
     left: 40%;
 }
 
 .item:nth-child(4) {
+    background-image: url('/portfolio.png');
     left: 45%;
 }
 
 .item:nth-child(5) {
+    background-image: url('/physics_project.png');
     left: 50%;
 }
 
@@ -129,6 +133,7 @@
 
     transform: translate(-40%, -50%);
 
+    text-shadow: 0 10px 20px var(--gray);
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     font-size: 20rem;
