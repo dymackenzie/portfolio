@@ -9,6 +9,7 @@
 }
 
 #awards-container {
+    visibility: collapse;  /* TODO */
     position: relative;
     display: flex;
     flex-direction: column;

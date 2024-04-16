@@ -10,9 +10,9 @@
 
 #about-me-section {
     width: 100%;
-    min-height: 200vh;
+    /*min-height: 200vh;*/
     display: flex;
-    padding: 120px 10vw 30vh 10vw;
+    padding: 120px 10vw 20vh 10vw;
 
     background: var(--base);
 }
@@ -46,7 +46,7 @@
 
 #about-me-header h2 span {
     position: relative;
-    font-size: 25rem;
+    font-size: 20rem;
     text-transform: uppercase;
 
     font-family: 'Open Sans', sans-serif;
@@ -56,8 +56,8 @@
 #about-me-header h3 {
     position: relative;
     font-weight: bold;
-    font-size: 35rem;
-    line-height: 65px;
+    font-size: 30rem;
+    line-height: 50px;
 
     font-family: 'Open Sans', sans-serif;
     color: var(--blue);
@@ -90,8 +90,9 @@
 
 #about-me p {
     position: relative;
-    font-size: 26rem;
+    font-size: 24rem;
     font-weight: 100;
+    padding-top: 1%;
     
     font-family: 'PT Sans', sans-serif;
     color: var(--gray);
@@ -115,14 +116,16 @@
     border-width: 10px;
     border-color: var(--blue);
     
-    background-size: 150%;
+    background-size: 200%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/profile-picture.jpg');
+    background-image: url('/film.jpg');
 }
 
 /*****************************/
 
 #about-me-outside {
+    visibility: collapse; /* TODO */
     position: relative;
     height: auto;
     width: 100%;
