@@ -104,8 +104,8 @@
 
 #about-me #about-profile-picture {
     position: absolute;
-    height: 500px;
-    width: 500px;
+    height: 50vh;
+    width: 50vh;
     margin-left: 70%;
 
     border-radius: 10vh;

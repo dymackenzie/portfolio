@@ -103,3 +103,16 @@ gsap.to("#about-me-outside-image", {
         toggleActions: 'play pause reverse reverse'
     }
 })
+
+gsap.from("#experience-container", {
+    yPercent: 20,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '#about-me',
+        start: 'bottom bottom',
+        end: '+=50%',
+        ease: 'circ',
+        scrub: true,
+        toggleActions: 'play pause reverse reverse'
+    }
+})
