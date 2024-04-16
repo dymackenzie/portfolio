@@ -125,8 +125,8 @@ strong {
     border-width: 5rem;
     border-color: var(--blue);
 
-    background-size: 200%;
-    background-image: url("/handstand_mountain.jpg");
+    background-size: cover;
+    background-image: url("/moon.jpg");
     background-position: center;
 
     transition: .2s ease-in-out;

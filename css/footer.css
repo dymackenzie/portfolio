@@ -11,16 +11,9 @@
 footer {
     position: relative;
     width: 100%;
-    min-height: 100px;
     bottom: 0;
 
-    background-color: var(--darker-base);
-    padding: 20px 50px;
-
-    font-size: 40rem;
-    font-family: 'Open Sans', sans-serif;
-    
-    filter: blur(0.1px);
+    background-color: var(--base);
 }
 
 footer .social-icons {
@@ -87,7 +80,18 @@ footer .footer-wave {
     height: 100px;
     background: url('/footer-wave-dark-base-2.png');
     background-size: 1000px 100px;
-    filter: blur(0px);
+    filter: blur(10px);
+}
+
+footer #footer-bg {
+    position: absolute;
+    width: 150%;
+    height: 110px;
+    bottom: 0;
+
+    background-color: var(--darker-base);
+    
+    filter: blur(10px);
 }
 
 footer .footer-wave#footer-wave1 {

@@ -104,10 +104,8 @@
 
 #about-me #about-profile-picture {
     position: absolute;
-    height: 100%;
-    width: 30%;
-    min-height: 30vh;
-    min-width: 30vh;
+    height: 500px;
+    width: 500px;
     margin-left: 70%;
 
     border-radius: 10vh;
@@ -116,8 +114,7 @@
     border-width: 10px;
     border-color: var(--blue);
     
-    background-size: 200%;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     background-image: url('/film.jpg');
 }
