@@ -48,7 +48,7 @@
     position: relative;
     left: 4%;
     user-select: none;
-    margin-bottom: 2%;
+    margin-bottom: 5vh;
 
     font-family: 'Open Sans', sans-serif;
     font-size: 50rem;
@@ -58,10 +58,10 @@
 #project-title p {
     left: 0%;
 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 26rem;
-    font-weight: 400;
-    color: var(--gray);
+    font-weight: 600;
+    color: var(--blue);
 }
 
 #project-title span {
@@ -103,16 +103,21 @@
 
 .item:nth-child(1) {
     background-image: url('/typing_game.png');
+    background-size: 135%;
+    background-position: 50% 80%;
     left: 30%;
 }
 
 .item:nth-child(2) {
     background-image: url('/immigr8.png');
+    background-size: 90%;
+    background-position: 50% 0%;
     left: 35%;
 }
 
 .item:nth-child(3) {
     background-image: url('/chess_bot.png');
+    background-size: 70%;
     left: 40%;
 }
 

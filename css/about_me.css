@@ -82,7 +82,7 @@
 #about-me h2 {
     position: relative;
     font-size: 20rem;
-    margin: 5% 40% 1% 1%;
+    padding: 5% 5% 5% 0%;
     
     font-family: 'Open Sans', sans-serif;
     color: var(--ruby);
@@ -103,12 +103,12 @@
 }
 
 #about-me #about-profile-picture {
-    position: absolute;
-    height: 50vh;
-    width: 50vh;
-    margin-left: 70%;
+    position: relative;
+    height: 28vw;
+    width: 25vw;
+    padding-left: 28vw;
 
-    border-radius: 10vh;
+    border-radius: 7vh;
 
     border: solid;
     border-width: 10px;
