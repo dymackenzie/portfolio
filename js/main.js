@@ -20,6 +20,19 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
+// DROPDOWN MENU
+
+const toggle = document.querySelector(".toggle_button")
+const toggleIcon = document.querySelector(".toggle_button ion-icon")
+const dropdown = document.querySelector(".dropdown_menu")
+
+toggle.onclick = () => {
+    dropdown.classList.toggle("open")
+    const isOpen = dropdown.classList.contains("open")
+
+    toggleIcon.name = isOpen ? "close-outline" : "menu-outline"
+}
+
 // CURSOR
 
 // const cursorDot = document.querySelector(".cursor-dot");
