@@ -140,3 +140,36 @@ strong {
     100% {transform: translateY(0);}
 
 }
+
+
+/* Cursor */
+
+/* .cursor-dot {
+    position: fixed;
+    left: 10px;
+    width: 0px;
+    height: 0px;
+    background-color: var(--gray);
+} */
+
+/* .cursor-outline {
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray);
+}
+
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    transition: width 1000ms, height 1000ms;
+}
+
+.cursor-outline.large {
+    height: 70px;
+    width: 70px;
+} */

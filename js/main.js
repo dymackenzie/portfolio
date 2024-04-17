@@ -19,3 +19,33 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+// CURSOR
+
+// const cursorDot = document.querySelector(".cursor-dot");
+// const cursorOutline = document.querySelector(".cursor-outline");
+
+// const links = document.querySelectorAll("nav ul li a");
+
+// window.addEventListener("mousemove", function (e) {
+//     const posX = e.clientX + 4;
+//     const posY = e.clientY + 4;
+//     cursorDot.style.left = posX + "px";
+//     cursorDot.style.top = posY + "px";
+
+//     cursorOutline.style.left = posX + "px";
+//     cursorOutline.style.top = posY + "px";
+
+// })
+
+// links.forEach(link => {
+//     link.addEventListener("mouseenter", () => {
+//         cursorOutline.classList.add("large");
+//     })
+// })
+
+// links.forEach(link => {
+//     link.addEventListener("mouseleave", () => {
+//         cursorOutline.classList.remove("large");
+//     })
+// })
