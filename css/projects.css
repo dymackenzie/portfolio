@@ -154,3 +154,33 @@
     font-size: 80%;
     user-select: none;
 }
+
+/* RESPONSIVE MEDIA */
+
+@media (max-width: 576px) {
+    #project-title {
+        padding-right: 10vw;
+        font-size: 40rem;
+    }
+
+    #project-title span {
+        font-size: 15rem;
+    }
+
+    #project-title p {
+        font-size: 14rem;
+    }
+
+    #decor-box1 {
+        height: 15vh;
+    }
+
+    #decor-box2 {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .item {
+        scale: 90%;
+    }
+}

@@ -188,3 +188,31 @@
     overflow: hidden;
     object-fit: cover;
 } */
+
+@media (max-width: 576px) {
+    #about-me #about-profile-picture {
+        display: none;
+    }
+
+    #about-me h2 {
+        font-size: 18rem;
+    }
+
+    #about-me-header h2 {
+        font-size: 35rem;
+    }
+
+    #about-me-header h2 span {
+        font-size: 12rem;
+    }
+
+    #about-me-header h3 {
+        line-height: 40rem;
+        font-size: 20rem;
+    }
+
+    #about-me h2 p {
+        line-height: 30rem;
+        font-size: 15rem;
+    }
+}

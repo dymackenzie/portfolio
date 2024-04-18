@@ -132,3 +132,26 @@
     font-family: 'Open Sans', sans-serif;
     color: var(--gray);
 }
+
+/* RESPONSE DESIGN */
+
+@media (max-width: 576px) {
+
+    #experience-container {
+        padding: 0;
+    }
+
+    #experiences-header {
+        margin-left: 0;
+        scale: 75%;
+    }
+
+    .experience-block {
+        margin-left: 0;
+        scale: 80%;
+    }
+
+    .experience-text p {
+        width: 100%;
+    }
+}

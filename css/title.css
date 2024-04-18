@@ -174,8 +174,24 @@ strong {
     width: 70px;
 } */
 
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 50rem;
+/* RESPONSIVE MEDIA */
+
+@media (max-width: 576px) {
+    #title-box {
+        padding: 30% 10% 10% 10%;
+        scale: 95%;
+    }
+
+    .after-title {
+        font-size: 35rem;
+    }
+
+    #profile-picture {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 35vw;
+        height: 20vh;
+        filter: brightness(95%);
     }
 }
