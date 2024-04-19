@@ -158,7 +158,7 @@
     color: var(--yellow);
 }
 
-#about-me-outside-image {
+/* #about-me-outside-image {
     position: relative;
     height: 40vh;
     width: 200%;
@@ -172,7 +172,7 @@
     background-size: cover;
     background-position: center;
     background-image: url("/elfin_buds.jpg");
-}
+} */
 
 #spacer {
     width: 100%;

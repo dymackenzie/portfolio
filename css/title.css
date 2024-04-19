@@ -41,13 +41,15 @@
     align-items: center;
     text-align: center;
     min-height: 100vh;
+
+    z-index: 1;
 }
 
 #canvas {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 99;
+    z-index: 0;
 }
 
 #title-box {
@@ -126,7 +128,7 @@ strong {
     border-color: var(--blue);
 
     background-size: cover;
-    background-image: url("/moon.jpg");
+    background-image: url("/moon_shot.png");
     background-position: center;
 
     transition: .2s ease-in-out;
