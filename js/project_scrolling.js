@@ -48,7 +48,7 @@ gsap.to(".project-container", {
     scrollTrigger: {
         trigger: '#projects-section',
         start: 'top top',
-        end: '+=200%',
+        end: '+=300%',
         pin: '#projects-section',
         ease: 'circ',
         scrub: true,
