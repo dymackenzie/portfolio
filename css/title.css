@@ -20,10 +20,10 @@
     }
 }
 
-@keyframes gradient {
+/* @keyframes gradient {
     0% {background-position: 0%}
     100% {background-position: 100%}
-}
+} */
 
 .main {
     position: relative;
@@ -69,6 +69,7 @@ h1 {
 
 .border {
     color: var(--blue);  
+    user-select: none;
     text-shadow:
       -1px -1px 0 var(--ruby), 
       1px -1px 0 var(--ruby),
@@ -78,6 +79,7 @@ h1 {
   
 .wave {
     position: relative;
+    user-select: none;
     color: var(--ruby);
     animation: wave 4s ease-in-out infinite;
 }
@@ -115,6 +117,19 @@ strong {
     color: var(--gray);
 }
 
+.status::before {
+    content: '';
+    position: absolute;
+    margin-top: 0rem;
+    top: -35%;
+    left: 0;
+    width: 30%;
+    height: 1rem;
+    transition: 0.3s;
+
+    background-color: var(--gray);
+}
+
 #profile-picture {
     position: relative;
     top: -3vh;
@@ -124,21 +139,22 @@ strong {
     z-index: 0;
 
     border-style: solid;
-    border-width: 5rem;
+    border-width: 4rem;
     border-color: var(--blue);
+    border-radius: 3%;
 
     background-size: cover;
     background-image: url("/moon_shot.png");
     background-position: center;
 
     transition: .2s ease-in-out;
-    animation: levitate 4s linear infinite;
+    animation: levitate 6s linear infinite;
 }
 
 @keyframes levitate {
 
     0% {transform: translateY(0);}
-    50% {transform: translateY(3%);}
+    50% {transform: translateY(1%);}
     100% {transform: translateY(0);}
 
 }

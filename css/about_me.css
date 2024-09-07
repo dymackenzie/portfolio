@@ -82,7 +82,7 @@
 #about-me h2 {
     position: relative;
     font-size: 15rem;
-    padding: 5% 5% 5% 0%;
+    padding: 8% 5% 5% 0%;
     
     font-family: 'Open Sans', sans-serif;
     color: var(--ruby);
@@ -104,8 +104,7 @@
 
 #about-me #about-profile-picture {
     position: relative;
-    height: 28vw;
-    width: 25vw;
+    height: 35vw;
     padding-left: 28vw;
 
     border-radius: 7vh;
@@ -115,14 +114,14 @@
     border-color: var(--blue);
     
     background-size: cover;
-    background-position: center;
-    background-image: url('/film.jpg');
+    background-attachment: fixed;
+    background-image: url('/professional_headshot_mackenzie_color.jpg');
 }
 
 /*****************************/
 
 #about-me-outside {
-    visibility: collapse; /* TODO */
+    visibility: collapse;
     position: relative;
     height: auto;
     width: 100%;

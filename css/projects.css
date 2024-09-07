@@ -123,17 +123,18 @@
 
 .item:nth-child(4) {
     background-image: url('/chess_bot.png');
+    background-size: 92%;
     left: 50%;
 }
 
-.item:nth-child(5) {
+/* .item:nth-child(5) {
     background-image: url('/portfolio.png');
     left: 55%;
-}
+} */
 
-.item:nth-child(6) {
+.item:nth-child(5) {
     background-image: url('/physics_project.png');
-    left: 60%;
+    left: 55%;
 }
 
 .item .content {
